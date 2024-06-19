@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>丸い矢印付きの見出し</title>
+        <link rel="stylesheet"
+        href="style.css">
+</head>
+<style>
+
+h1.q1 {
+   font-family: "M PLUS 1p", sans-serif;
+   color: #333;
+   font-size: 1.5rem;
+   line-height: 1.25;
+   position: relative;
+   padding-left: 30px; /* 矢印のスペースを確保 */
+}
+h1.q1::before {
+   content: "⟲"; /* 円形の矢印を表すUnicode文字 */
+   font-size: 1.5rem;
+   color: #009900; /* 緑色 */
+   position: absolute;
+   left: 0;
+   top: 50%;
+   transform: translateY(-50%);
+}
+/* 以下の css は編集しないでください */
+body {
+   background-color: #fff;
+   color: #666;
+   font-family: メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, sans-serif;
+}
+h1 {
+   font-family: "M PLUS 1p", sans-serif;
+</style>
+<body>
+    <h1 class="q1">丸い矢印付きの見出し</h1>
+
+
+    
+</body>
+</html>
